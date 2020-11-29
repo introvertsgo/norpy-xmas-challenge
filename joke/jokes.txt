@@ -1,0 +1,30 @@
+# This is a grammar file. In this top section you can put different jokes, one per line.
+# When the tweet is generated, a line will be chosen at random. Empty lines, and lines
+# that start with a hash, are ignored. Within a line you can put a "node" in {curly
+# braces}.
+
+Why did the {animal} cross the road? {road_punchline}
+How many {lang} devs does it take to change a light bulb? {bulb_punchline}
+
+# Sections in [square brackets] are "nodes". The same rules apply - you can put several
+# lines here and one will be chosen at random. Nodes can themselves refer to other nodes
+
+[animal]
+chicken
+mongoose
+spider
+dinosoar
+
+[road_punchline]
+because chickens weren't invented yet
+to get to the other side
+
+[lang]
+python
+javascript
+java
+golang
+
+[bulb_punchline]
+They didn't change it, as it was working fine on their machines
+-- error : bulb doesn't exist --
